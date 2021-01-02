@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "q7W5dmynQfDUdO6slXGS9zydnKwRH5/1OF0S4mBzw1Q0rCRrYT69lOHp6NTVAVvzlceaVPUiXLD74albiI2BGA==",
+  "success": true,
+  "projectFilePath": "C:\\Projects\\SortingAlgorithms\\SortingAlgorithmsConsoleApp\\SortingAlgorithmsConsoleApp.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\iamKosmic\\.nuget\\packages\\microsoft.netcore.app.ref\\3.1.0\\microsoft.netcore.app.ref.3.1.0.nupkg.sha512",
+    "C:\\Users\\iamKosmic\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\3.1.0\\microsoft.windowsdesktop.app.ref.3.1.0.nupkg.sha512"
+  ],
+  "logs": []
+}
