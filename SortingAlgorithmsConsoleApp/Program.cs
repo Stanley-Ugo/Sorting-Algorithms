@@ -14,7 +14,7 @@ namespace SortingAlgorithmsConsoleApp
 
         private static void TestInsertionSort()
         {
-            Console.WriteLine("Pleadse Insert 10 Nunmbers");
+            Console.WriteLine("Pleadse Enter 10 Nunmbers");
 
             int numbers1 = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Pleadse Insert Another Nunmbers");
