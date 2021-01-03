@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace SortingAlgorithms
@@ -24,6 +25,11 @@ namespace SortingAlgorithms
                     right.Add(numbers[i]);
                 }
             }
+
+            left = MergeSort(left.ToArray()).ToList();
+            right = MergeSort(right.ToArray()).ToList();
+
+            return MergeSort(left, right);
         }
     }
 }
