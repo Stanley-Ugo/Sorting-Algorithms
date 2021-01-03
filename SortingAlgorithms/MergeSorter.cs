@@ -4,7 +4,8 @@ using System.Text;
 
 namespace SortingAlgorithms
 {
-    class MergeSorter
+    public static class MergeSorter
     {
+
     }
 }
