@@ -2,8 +2,11 @@
 
 namespace SortingAlgorithms
 {
-    public class InsertionSorter
+    public static class InsertionSorter
     {
+        public static void DoInsertionSort(this int[] numbers)
+        {
 
+        }
     }
 }

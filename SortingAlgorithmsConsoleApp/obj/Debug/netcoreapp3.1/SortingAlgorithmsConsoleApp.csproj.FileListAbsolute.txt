@@ -1,0 +1,16 @@
+C:\Projects\SortingAlgorithms\SortingAlgorithmsConsoleApp\bin\Debug\netcoreapp3.1\SortingAlgorithmsConsoleApp.exe
+C:\Projects\SortingAlgorithms\SortingAlgorithmsConsoleApp\bin\Debug\netcoreapp3.1\SortingAlgorithmsConsoleApp.deps.json
+C:\Projects\SortingAlgorithms\SortingAlgorithmsConsoleApp\bin\Debug\netcoreapp3.1\SortingAlgorithmsConsoleApp.runtimeconfig.json
+C:\Projects\SortingAlgorithms\SortingAlgorithmsConsoleApp\bin\Debug\netcoreapp3.1\SortingAlgorithmsConsoleApp.runtimeconfig.dev.json
+C:\Projects\SortingAlgorithms\SortingAlgorithmsConsoleApp\bin\Debug\netcoreapp3.1\SortingAlgorithmsConsoleApp.dll
+C:\Projects\SortingAlgorithms\SortingAlgorithmsConsoleApp\bin\Debug\netcoreapp3.1\SortingAlgorithmsConsoleApp.pdb
+C:\Projects\SortingAlgorithms\SortingAlgorithmsConsoleApp\bin\Debug\netcoreapp3.1\SortingAlgorithms.dll
+C:\Projects\SortingAlgorithms\SortingAlgorithmsConsoleApp\bin\Debug\netcoreapp3.1\SortingAlgorithms.pdb
+C:\Projects\SortingAlgorithms\SortingAlgorithmsConsoleApp\obj\Debug\netcoreapp3.1\SortingAlgorithmsConsoleApp.csprojAssemblyReference.cache
+C:\Projects\SortingAlgorithms\SortingAlgorithmsConsoleApp\obj\Debug\netcoreapp3.1\SortingAlgorithmsConsoleApp.AssemblyInfoInputs.cache
+C:\Projects\SortingAlgorithms\SortingAlgorithmsConsoleApp\obj\Debug\netcoreapp3.1\SortingAlgorithmsConsoleApp.AssemblyInfo.cs
+C:\Projects\SortingAlgorithms\SortingAlgorithmsConsoleApp\obj\Debug\netcoreapp3.1\SortingAlgorithmsConsoleApp.csproj.CoreCompileInputs.cache
+C:\Projects\SortingAlgorithms\SortingAlgorithmsConsoleApp\obj\Debug\netcoreapp3.1\SortingAlgorithmsConsoleApp.csproj.CopyComplete
+C:\Projects\SortingAlgorithms\SortingAlgorithmsConsoleApp\obj\Debug\netcoreapp3.1\SortingAlgorithmsConsoleApp.dll
+C:\Projects\SortingAlgorithms\SortingAlgorithmsConsoleApp\obj\Debug\netcoreapp3.1\SortingAlgorithmsConsoleApp.pdb
+C:\Projects\SortingAlgorithms\SortingAlgorithmsConsoleApp\obj\Debug\netcoreapp3.1\SortingAlgorithmsConsoleApp.genruntimeconfig.cache

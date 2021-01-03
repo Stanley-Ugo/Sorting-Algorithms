@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "SortingAlgorithmsConsoleApp/1.0.0": {
+        "dependencies": {
+          "SortingAlgorithms": "1.0.0"
+        },
+        "runtime": {
+          "SortingAlgorithmsConsoleApp.dll": {}
+        }
+      },
+      "SortingAlgorithms/1.0.0": {
+        "runtime": {
+          "SortingAlgorithms.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "SortingAlgorithmsConsoleApp/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "SortingAlgorithms/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
