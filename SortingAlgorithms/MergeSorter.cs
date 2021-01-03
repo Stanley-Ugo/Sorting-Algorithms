@@ -6,6 +6,9 @@ namespace SortingAlgorithms
 {
     public static class MergeSorter
     {
+        private static int[] MergeSort(int[] numbers)
+        {
 
+        }
     }
 }
