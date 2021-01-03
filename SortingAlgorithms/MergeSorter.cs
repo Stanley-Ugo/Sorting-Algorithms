@@ -12,6 +12,18 @@ namespace SortingAlgorithms
 
             var left = new List<int>();
             var right = new List<int>();
+
+            for (int i = 0; i < numbers.Length; i++)
+            {
+                if (i%2 > 0)
+                {
+                    left.Add(numbers[i]);
+                }
+                else
+                {
+                    right.Add(numbers[i]);
+                }
+            }
         }
     }
 }
