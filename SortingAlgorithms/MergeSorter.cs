@@ -29,7 +29,12 @@ namespace SortingAlgorithms
             left = MergeSort(left.ToArray()).ToList();
             right = MergeSort(right.ToArray()).ToList();
 
-            return MergeSort(left, right);
+            return Merge(left, right);
+        }
+
+        private static int[] Merge(List<int> left, List<int> right)
+        {
+
         }
     }
 }
