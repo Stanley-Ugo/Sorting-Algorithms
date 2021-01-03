@@ -7,6 +7,15 @@ namespace SortingAlgorithms
 {
     public static class MergeSorter
     {
+        public static void DoMergeSort(this int[] numbers)
+        {
+            var sortedNumbers = MergeSort(numbers);
+
+            for (int i = 0; i < sortedNumbers.Length; i++)
+            {
+                numbers[i] = sortedNumbers[i];
+            }
+        }
         private static int[] MergeSort(int[] numbers)
         {
             if (numbers.Length <= 1) return numbers; // Base Case
@@ -34,7 +43,42 @@ namespace SortingAlgorithms
 
         private static int[] Merge(List<int> left, List<int> right)
         {
+            var result = new List<int>();
 
+            while (NotEmpty(left) && NotEmpty(right))
+            {
+                if (left.First() <= right.First())
+                {
+                    MoveValueFromSourceToResult(left, result);
+                }
+                else
+                {
+                    MoveValueFromSourceToResult(right, result);
+                }
+            }
+
+            while (NotEmpty(left))
+            {
+                MoveValueFromSourceToResult(left, result);
+            }
+
+            while (NotEmpty(right))
+            {
+                MoveValueFromSourceToResult(right, result);
+            }
+
+            return result.ToArray();
+        }
+
+        private static bool NotEmpty(List<int> list)
+        {
+            return list.Count > 0;
+        }
+
+        private static void MoveValueFromSourceToResult(List<int> list, List<int> result)
+        {
+            result.Add(list.First());
+            list.RemoveAt(0);
         }
     }
 }
