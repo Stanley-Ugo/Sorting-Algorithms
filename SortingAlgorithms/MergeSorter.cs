@@ -12,9 +12,7 @@ namespace SortingAlgorithms
             var sortedNumbers = MergeSort(numbers);
 
             for (int i = 0; i < sortedNumbers.Length; i++)
-            {
                 numbers[i] = sortedNumbers[i];
-            }
         }
         private static int[] MergeSort(int[] numbers)
         {
@@ -22,23 +20,28 @@ namespace SortingAlgorithms
 
             var left = new List<int>();
             var right = new List<int>();
+            Divide(numbers, left, right);
 
-            for (int i = 0; i < numbers.Length; i++)
-            {
-                if (i%2 > 0)
-                {
-                    left.Add(numbers[i]);
-                }
-                else
-                {
-                    right.Add(numbers[i]);
-                }
-            }
-
-            left = MergeSort(left.ToArray()).ToList();
-            right = MergeSort(right.ToArray()).ToList();
+            left = MergeSortList(left);
+            right = MergeSortList(right);
 
             return Merge(left, right);
+        }
+
+        private static List<int> MergeSortList(List<int> list)
+        {
+            return MergeSort(list.ToArray()).ToList();
+        }
+
+        private static void Divide(int[] numbers, List<int> left, List<int> right)
+        {
+            for (int i = 0; i < numbers.Length; i++)
+            {
+                if (i.IsOdd())
+                    left.Add(numbers[i]);
+                else
+                    right.Add(numbers[i]);
+            }
         }
 
         private static int[] Merge(List<int> left, List<int> right)
@@ -46,26 +49,11 @@ namespace SortingAlgorithms
             var result = new List<int>();
 
             while (NotEmpty(left) && NotEmpty(right))
-            {
-                if (left.First() <= right.First())
-                {
-                    MoveValueFromSourceToResult(left, result);
-                }
-                else
-                {
-                    MoveValueFromSourceToResult(right, result);
-                }
-            }
+                MoveSmallerValuesInLeftOrRightToResult(left, right, result);
 
-            while (NotEmpty(left))
-            {
-                MoveValueFromSourceToResult(left, result);
-            }
+            MoveRemaininValuesFromSourceToResult(left, result);
 
-            while (NotEmpty(right))
-            {
-                MoveValueFromSourceToResult(right, result);
-            }
+            MoveRemaininValuesFromSourceToResult(right, result);
 
             return result.ToArray();
         }
@@ -75,10 +63,27 @@ namespace SortingAlgorithms
             return list.Count > 0;
         }
 
+        private static void MoveSmallerValuesInLeftOrRightToResult(List<int> left, List<int> right, List<int> result)
+        {
+            if (left.First() <= right.First())
+                MoveValueFromSourceToResult(left, result);
+            else
+                MoveValueFromSourceToResult(right, result);
+        }
+
+
         private static void MoveValueFromSourceToResult(List<int> list, List<int> result)
         {
             result.Add(list.First());
             list.RemoveAt(0);
+        }
+
+        private static void MoveRemaininValuesFromSourceToResult(List<int> left, List<int> result)
+        {
+            while (NotEmpty(left))
+            {
+                MoveValueFromSourceToResult(left, result);
+            }
         }
     }
 }
