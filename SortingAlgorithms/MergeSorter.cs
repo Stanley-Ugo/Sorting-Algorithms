@@ -79,7 +79,7 @@ namespace SortingAlgorithms
                 MoveValueFromSourceToResult(right, result);
         }
 
-
+        //Moving the values form source to result
         private static void MoveValueFromSourceToResult(List<int> list, List<int> result)
         {
             result.Add(list.First());
