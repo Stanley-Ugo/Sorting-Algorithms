@@ -37,6 +37,7 @@ namespace SortingAlgorithms
             return MergeSort(list.ToArray()).ToList();
         }
 
+        //The Divide Method
         private static void Divide(int[] numbers, List<int> left, List<int> right)
         {
             for (int i = 0; i < numbers.Length; i++)
