@@ -64,12 +64,13 @@ namespace SortingAlgorithms
             return result.ToArray();
         }
 
-        //Adding the NotEmpty mEthod
+        //Adding the NotEmpty MEthod
         private static bool NotEmpty(List<int> list)
         {
             return list.Count > 0;
         }
 
+        //The function moves smaller values from left/right to the result var
         private static void MoveSmallerValuesInLeftOrRightToResult(List<int> left, List<int> right, List<int> result)
         {
             if (left.First() <= right.First())
