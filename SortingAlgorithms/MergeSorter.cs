@@ -49,6 +49,7 @@ namespace SortingAlgorithms
             }
         }
 
+        //The Merge Function
         private static int[] Merge(List<int> left, List<int> right)
         {
             var result = new List<int>();
