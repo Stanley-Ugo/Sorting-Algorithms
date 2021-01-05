@@ -31,6 +31,7 @@ namespace SortingAlgorithms
             return Merge(left, right);
         }
 
+        //The MergeSortList function
         private static List<int> MergeSortList(List<int> list)
         {
             return MergeSort(list.ToArray()).ToList();
