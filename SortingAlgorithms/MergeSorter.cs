@@ -15,6 +15,8 @@ namespace SortingAlgorithms
             for (int i = 0; i < sortedNumbers.Length; i++)
                 numbers[i] = sortedNumbers[i];
         }
+
+        //The Merge Sort Function
         private static int[] MergeSort(int[] numbers)
         {
             if (numbers.Length <= 1) return numbers; // Base Case
