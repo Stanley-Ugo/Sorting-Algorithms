@@ -7,6 +7,7 @@ namespace SortingAlgorithms
 {
     public static class MergeSorter
     {
+        //The Do Merge method
         public static void DoMergeSort(this int[] numbers)
         {
             var sortedNumbers = MergeSort(numbers);
