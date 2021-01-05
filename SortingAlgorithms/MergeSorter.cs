@@ -64,6 +64,7 @@ namespace SortingAlgorithms
             return result.ToArray();
         }
 
+        //Adding the NotEmpty mEthod
         private static bool NotEmpty(List<int> list)
         {
             return list.Count > 0;
